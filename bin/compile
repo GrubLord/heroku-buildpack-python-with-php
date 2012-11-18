@@ -236,14 +236,14 @@ set -e
 
 # Set context environment variables.
 
-set-env PATH '$HOME/.heroku/venv/bin:$PATH'
+set-env PATH '$HOME/www/.heroku/venv/bin:$PATH'
 set-default-env PYTHONUNBUFFERED true
-set-default-env LIBRARY_PATH /app/.heroku/vendor/lib
-set-default-env LD_LIBRARY_PATH /app/.heroku/vendor/lib
+set-default-env LIBRARY_PATH /app/www/.heroku/vendor/lib
+set-default-env LD_LIBRARY_PATH /app/www/.heroku/vendor/lib
 set-default-env LANG en_US.UTF-8
 set-default-env PYTHONHASHSEED random
-set-default-env PYTHONHOME /app/.heroku/venv/
-set-default-env PYTHONPATH /app/
+set-default-env PYTHONHOME /app/www/.heroku/venv/
+set-default-env PYTHONPATH /app/www/
 
 # Experimental post_compile hook.
 source $BIN_DIR/steps/hooks/post_compile
